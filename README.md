@@ -57,6 +57,3 @@ O arquivo de histórico (`historico.txt`) deve registrar todas as operações re
   - `REDISTRIBUI` indica que ocorreu a redistribuição.
   - `[CONSULTORIO_FECHADO]` é o número do consultório cujas filas foram redistribuídas.
   - `[CONSULTORIO_DESTINO]` é o número do consultório que recebeu as filas redistribuídas.
-
-## Exemplos de Arquivo de Histórico
-
