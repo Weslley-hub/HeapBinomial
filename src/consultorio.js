@@ -94,7 +94,7 @@ function redistribuirFilas(idFechado) {
                 );
             }
 
-            console.log(`Filas do consultório ${idFechado} foram redistribuídas para o consultório ${id}.`);
+            console.log(`Filas do consultorio ${idFechado} foram redistribuidas para o consultorio ${id}.`);
             break;
         }
     }
@@ -104,7 +104,7 @@ function mostrarSituacao() {
     for (const [consultorio, filas] of Object.entries(consultorios)) {
         console.log(`  \n consultorio ${consultorio}:`);
         console.log(`  Status: ${filas.aberto ? 'Aberto' : 'Fechado'}`);
-        console.log(`  prioritario: ${filas.prioritario.head ? filas.prioritario.head.key : 'Vazia'}`);
+        console.log(`  Prioritario: ${filas.prioritario.head ? filas.prioritario.head.key : 'Vazia'}`);
         console.log(`  Nao prioritario: ${filas.naoPrioritario.head ? filas.naoPrioritario.head.key : 'Vazia'}`);
     }
 }

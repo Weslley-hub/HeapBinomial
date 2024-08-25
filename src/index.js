@@ -18,11 +18,11 @@ function menu() {
         console.log('4. Exibir situação atual');
         console.log('5. Sair');
 
-        const escolha = readline.question('\nEscolha uma opcao: \n');
+        const escolha = readline.question('\n Escolha uma opcao: \n');
 
         if (escolha === '1') {
             const consultorio = readline.question('Numero do consultorio: ');
-            const prioritario = readline.keyInYNStrict('O paciente é prioritario? ');
+            const prioritario = readline.keyInYNStrict('O paciente e prioritario? ');
             const numero = readline.question('Numero do paciente: ');
             adicionarPaciente(consultorio, prioritario, numero);
             logOperation(`INC ${prioritario ? 'P' : 'N'} ${numero} - ${consultorio}`);
